@@ -1,0 +1,12 @@
+$colors: #2c98f0, #ec5453, #f9bf3f, #a84cb8, #2fa499, #4054b2;
+@mixin color($isFill: false) {
+    @for $i from 1 to length($colors){
+        .color-#{$i} {
+            @if $isFill {
+                fill: nth($colors , $i);
+            } @else {
+                background: nth($colors , $i);
+            }
+        }
+    }
+}

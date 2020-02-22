@@ -1,0 +1,36 @@
+@import './common.scss';
+.timeline-entry {
+    position: relative;
+    margin-bottom: 10px;
+    .timeline-icon{
+        width: 40px;
+        height: 40px;
+    }
+}
+.timeline-entry-inner{
+    display: flex;
+    .timeline-label{
+        position: relative;
+        background: #f2f3f7;
+        padding: 1.5em;
+        margin-left: 20px;
+        flex: 1;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 9px 9px 9px 0;
+            border-color: transparent #f2f3f7 transparent transparent;
+            left: 0;
+            top: 10px;
+            margin-left: -9px;
+        }
+    }
+    svg path{
+        fill: #ffffff;
+    }
+    @include color(true);
+}

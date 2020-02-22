@@ -1,0 +1,103 @@
+@import '../../src/common/colors.scss';
+
+$color: $primary-regular;
+.custom-radio-input{
+    cursor: pointer;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.has-label{
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+    }
+    &.input-disabled{
+        pointer-events: none;
+    }
+    .hover-over{
+        position: absolute;
+        min-width: 2.25rem;
+        min-height: 2.25rem;
+        left: -.5rem;
+    }
+    .custom-radio{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        display: none;
+        margin: 0;
+        + .label-tag{
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            display: inline-flex;
+            height: 100%;
+            align-items: center;
+            vertical-align: middle;
+            width: 100%;
+            font-size: 0.875rem;
+            color: #333333;
+            margin-bottom: 0;
+            z-index: 1;
+            .label-span{
+                box-sizing: border-box;
+                display: inline-block;
+                position: relative;
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-right: 0.625rem;
+                flex-shrink: 0;
+                z-index: 1;
+                pointer-events: none;
+                &:before{
+                    content: '';
+                    box-sizing: border-box;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: border-color ease 280ms;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-radius: 50%;
+                    background: #ffffff;
+                    border-color: #D8D8D8;
+                }
+                &:after{
+                    content: '';
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    height: 1.25rem;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: transform ease 280ms,background-color ease 280ms;
+                    width: 1.25rem;
+                    transform: scale(.001);
+                }
+            }
+        }
+        &[disabled] + label {
+            opacity: .5;
+        }
+        &:checked + .label-tag {
+            .label-span:before{
+                border-color: $color;
+            }
+            .label-span:after{
+                background-color: $color;
+                transform: scale(.6);
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        & {
+            height: 12.5vw;
+		    max-height: 2.8125rem;
+        }
+    }
+}

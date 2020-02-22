@@ -1,0 +1,112 @@
+@import '../../src/common/colors.scss';
+
+$color: $primary-regular;
+.custom-switch-input{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 2.5rem;
+    padding-left: 0.9375rem;
+    &.has-label{
+        padding-right: 0.9375rem;
+    }
+    &.input-disabled{
+        pointer-events: none;
+    }
+    .custom-switch{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        display: none;
+        margin: 0;
+        &:checked{
+            + .custom-switch-btn{
+                &::before {
+                    left: .44rem;
+                    color: #fff;
+                    z-index: 2;
+                }
+                &::after {
+                    z-index: 0;
+                    transform: scale(0);
+                }
+                .switch-button {
+                    left: 1.55rem;
+                    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+                }
+            }
+            + .show-switch-status::before{
+                content: "ON";
+            }
+        }
+        &[disabled] + label,
+        &[disabled] ~ .switch-label {
+            opacity: .5;
+        }
+    }
+    .custom-switch-btn{
+        background-color: $color;
+        border-radius: 0.625rem;
+        position: relative;
+        width: 2.81rem;
+        height: 1.13rem;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex: 0 0 2.81rem;
+        &::before {
+            color: #7D7D7D;
+            position: absolute;
+            font-weight: 700;
+            font-size: .56rem;
+            left: 22px;
+            z-index: 1;
+            line-height: .5rem;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 1.13rem;
+            transition: opacity .2s ease-out .1s,transform .3s ease-out .1s;
+            z-index: 0;
+            background-color: #CFCFCF;
+            transform: scale(1)
+        }
+    }
+    .show-switch-status::before {
+        content: "OFF";
+    }
+    .switch-button {
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 3px 0 rgba(51, 51, 51, 0.3);
+        height: 1.25rem;
+        left: 0px;
+        position: absolute;
+        transition: .3s;
+        width: 20px;
+        z-index: 1;
+    }
+    .switch-label{
+        cursor: pointer;
+        margin-bottom: 0;
+        font-size: 0.875rem;
+        color: #333333;
+        flex: 1;
+        z-index: 1;
+    }
+    &.label-before .custom-switch-btn{
+        order: 1;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    @media (max-width: 992px) {
+        & {
+            height: 12.5vw;
+		    max-height: 2.8125rem;
+        }
+    }
+}

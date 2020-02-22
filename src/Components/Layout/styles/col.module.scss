@@ -1,0 +1,182 @@
+.col{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+@mixin col {
+    background-color: #bbeffd;
+    border: 1px solid #61dafb;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+$default-cols-cls: col;
+@mixin cols($cols-name) {
+    @for $i from 1 to 13{
+        .#{$default-cols-cls}#{$cols-name}-#{$i} {
+            -ms-flex: 0 0 (100% / ( 12 / $i));
+            flex: 0 0 (100% / ( 12 / $i));
+            max-width: (100% / ( 12 / $i));
+        }
+    }
+}
+@include cols('');
+
+$default-order-cls: order;
+@mixin order($order-name) {
+    @for $i from 1 to 13{
+        .#{$default-order-cls}#{$order-name}-#{$i} {
+            -ms-flex-order: $i;
+            order: $i;
+        }
+    }
+}
+@include order('');
+
+.order-first {
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+.order-last {
+    -ms-flex-order: 13;
+    order: 13;
+}
+
+$default-offset-cls: offset;
+@mixin offset($offset-name) {
+    @for $i from 1 to 12{
+        .#{$default-offset-cls}#{$offset-name}-#{$i} {
+            margin-left: (100% / ( 12 / $i));
+        }
+    }
+}
+@include offset('');
+  
+@media (min-width: 576px) {
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-sm-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    @include cols('-sm');
+    .order-sm-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    .order-sm-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    @include order('-sm');
+    @include offset('-sm');
+}
+  
+@media (min-width: 768px) {
+    .col-md {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-md-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    @include cols('-md');
+    .order-md-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    .order-md-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    @include order('-md');
+    @include offset('-md');
+}
+  
+@media (min-width: 992px) {
+    .col-lg {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-lg-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    @include cols('-lg');
+    .order-lg-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    .order-lg-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    @include order('-lg');
+    @include offset('-lg');
+}
+  
+@media (min-width: 1200px) {
+    .col-xl {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-xl-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    @include cols('-xl');
+    .order-xl-first {
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    .order-xl-last {
+        -ms-flex-order: 13;
+        order: 13;
+    }
+    @include order('-xl');
+    @include offset('-xl');
+}
