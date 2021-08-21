@@ -1,32 +1,77 @@
 .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-h1,h2{
-    margin: 0;
+h1,
+h2 {
+	margin: 0;
 }
-.cover-image{
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 50vh 0; // apply media query or vh
-    color: #ffffff;
-    text-shadow: 0 1px 2px rgba(0,0,0,.2);
-    text-align: center;
+.cover-image {
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50vh 0; // apply media query or vh
+	color: #ffffff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: center;
 }
-.sub-title{
-    font-size: 22px;
+.sub-title {
+	font-size: 22px;
 }
-.card{
-    padding: 30px !important;
+.card {
+	padding: 30px !important;
+}
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@keyframes rubberBand {
+	0% {
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	to {
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
 }

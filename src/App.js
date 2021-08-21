@@ -1,21 +1,26 @@
 import React from 'react';
+
+import Introduction from './Components/Introduction/Introduction';
+import About from './Components/About/About';
+import Skills from './Components/Skills/Skills';
+import Education from './Components/Education/Education';
+import Art from './Components/Art/Art';
+
+import RandomQuotes from "./Containers/RandomQuotes/RandomQuotes";
+
 import './App.scss';
-import Introduction from './Components/Introduction';
-import About from './Components/About';
-import Skills from './Components/Skills';
-import Education from './Components/Education';
-import Art from './Components/Art';
 
 function App() {
-    return (
-        <div className="App">
-            <Introduction/>
-            <About/>
-            <Skills/>
-            <Education/>
-            <Art/>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Introduction />
+      <RandomQuotes />
+      <About />
+      <Skills />
+      <Education />
+      {/* <Art/> */}
+    </div>
+  );
 }
 
 export default App;
