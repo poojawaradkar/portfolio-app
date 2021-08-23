@@ -10,14 +10,33 @@
     "es6": true
   },
   "rules": {
-    "arrow-parens": ["error", "as-needed"],
-    "comma-dangle": ["error", "only-multiline"],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
     "consistent-return": "off",
     "global-require": "off",
-    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
     "linebreak-style": 0,
-    "eslint linebreak-style": [0, "error", "windows"],
-    "max-len": ["warn", 120],
+    "eslint linebreak-style": [
+      0,
+      "error",
+      "windows"
+    ],
+    "max-len": [
+      "warn",
+      120
+    ],
     "no-alert": "off",
     "no-confusing-arrow": "off",
     "no-console": "off",
@@ -44,9 +63,17 @@
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
-        "components": ["Link"],
-        "specialLink": ["to"],
-        "aspects": ["noHref", "invalidHref", "preferButton"]
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
       }
     ],
     "import/default": "off",
@@ -56,10 +83,16 @@
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off"
   },
-  "plugins": ["react", "import"],
+  "plugins": [
+    "react",
+    "import"
+  ],
   "settings": {
     "import/resolve": {
-      "moduleDirectory": ["node_modules", "src"]
+      "moduleDirectory": [
+        "node_modules",
+        "src"
+      ]
     }
   },
   "parser": "babel-eslint",

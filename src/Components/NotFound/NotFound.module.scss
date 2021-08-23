@@ -1,0 +1,42 @@
+@import "../../scss/_media-queries";
+
+.root {
+	position: relative;
+	text-align: center;
+	padding: var(--space-md);
+	padding-bottom: 12%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.heading {
+	margin: var(--space-md) 0;
+	font-size: var(--text-xl);
+	font-family: var(--font-poppins);
+	@include respond-below(sm) {
+		& {
+			font-size: var(--text-sm);
+		}
+	}
+}
+.subHeading {
+	color: var(--text-light);
+	@include respond-below(sm) {
+		& {
+			font-size: var(--text-xs);
+		}
+	}
+}
+
+@include respond-below(sm) {
+	.imgStyle {
+		max-width: 80px;
+	}
+}
+
+.redirectBtn {
+	position: absolute !important;
+	bottom: 12%;
+}

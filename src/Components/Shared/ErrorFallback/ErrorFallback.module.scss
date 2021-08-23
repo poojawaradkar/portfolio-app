@@ -1,0 +1,17 @@
+@import "../../../scss/_media-queries";
+
+.errorDetails {
+	width: 500px;
+	min-height: 60px;
+	max-height: 320px;
+	padding: var(--space-md);
+	font-size: var(--text-xs);
+	font-weight: normal;
+	background-color: var(--black);
+	color: var(--red);
+	text-align: left;
+	margin: var(--space-md) 0;
+	@include respond-below(sm) {
+		width: 100%;
+	}
+}
