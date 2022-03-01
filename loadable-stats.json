@@ -1,14 +1,14 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "ebea23253e4eb7883f96",
+  "hash": "7348deec2e9d2704764a",
   "publicPath": "/portfolio-app",
   "outputPath": "/home/pooja/Project/work/portfolio-app/build",
   "assetsByChunkName": {
     "app": [
-      "0.29147b0b.css",
-      "app.c6a5c794.js",
-      "app.c6a5c794.js.map"
+      "0.9ebba7bb.css",
+      "app.4fc2409e.js",
+      "app.4fc2409e.js.map"
     ],
     "runtime": [
       "runtime.2fe0f525.js",
@@ -17,8 +17,8 @@
   },
   "assets": [
     {
-      "name": "0.29147b0b.css",
-      "size": 13782,
+      "name": "0.9ebba7bb.css",
+      "size": 13861,
       "chunks": [
         0
       ],
@@ -63,8 +63,8 @@
       "emitted": false
     },
     {
-      "name": "app.c6a5c794.js",
-      "size": 17376,
+      "name": "app.4fc2409e.js",
+      "size": 17492,
       "chunks": [
         0
       ],
@@ -77,8 +77,8 @@
       "emitted": false
     },
     {
-      "name": "app.c6a5c794.js.map",
-      "size": 35024,
+      "name": "app.4fc2409e.js.map",
+      "size": 35466,
       "chunks": [
         0
       ],
@@ -143,9 +143,9 @@
         "runtime.2fe0f525.js.map",
         "2.85f1175a.js",
         "2.85f1175a.js.map",
-        "0.29147b0b.css",
-        "app.c6a5c794.js",
-        "app.c6a5c794.js.map"
+        "0.9ebba7bb.css",
+        "app.4fc2409e.js",
+        "app.4fc2409e.js.map"
       ],
       "children": {},
       "childAssets": {}
@@ -156,9 +156,9 @@
     {
       "id": 0,
       "files": [
-        "0.29147b0b.css",
-        "app.c6a5c794.js",
-        "app.c6a5c794.js.map"
+        "0.9ebba7bb.css",
+        "app.4fc2409e.js",
+        "app.4fc2409e.js.map"
       ]
     },
     {
