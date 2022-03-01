@@ -1,14 +1,14 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "d3c08d358de511b8e7ab",
+  "hash": "3f1bea81a82f9da7ba9a",
   "publicPath": "/portfolio-app",
   "outputPath": "/home/pooja/Project/work/portfolio-app/build",
   "assetsByChunkName": {
     "app": [
-      "0.48fe4a47.css",
-      "app.85aeb49c.js",
-      "app.85aeb49c.js.map"
+      "0.29147b0b.css",
+      "app.f8e4e8a8.js",
+      "app.f8e4e8a8.js.map"
     ],
     "runtime": [
       "runtime.2fe0f525.js",
@@ -17,8 +17,8 @@
   },
   "assets": [
     {
-      "name": "0.48fe4a47.css",
-      "size": 13143,
+      "name": "0.29147b0b.css",
+      "size": 13782,
       "chunks": [
         0
       ],
@@ -31,8 +31,8 @@
       "emitted": false
     },
     {
-      "name": "2.c313720d.js",
-      "size": 264568,
+      "name": "2.85f1175a.js",
+      "size": 268099,
       "chunks": [
         2
       ],
@@ -43,7 +43,7 @@
       "emitted": false
     },
     {
-      "name": "2.c313720d.js.LICENSE.txt",
+      "name": "2.85f1175a.js.LICENSE.txt",
       "size": 1451,
       "chunks": [],
       "chunkNames": [],
@@ -51,8 +51,8 @@
       "emitted": false
     },
     {
-      "name": "2.c313720d.js.map",
-      "size": 968582,
+      "name": "2.85f1175a.js.map",
+      "size": 986684,
       "chunks": [
         2
       ],
@@ -63,8 +63,8 @@
       "emitted": false
     },
     {
-      "name": "app.85aeb49c.js",
-      "size": 15768,
+      "name": "app.f8e4e8a8.js",
+      "size": 17315,
       "chunks": [
         0
       ],
@@ -77,8 +77,8 @@
       "emitted": false
     },
     {
-      "name": "app.85aeb49c.js.map",
-      "size": 31304,
+      "name": "app.f8e4e8a8.js.map",
+      "size": 34894,
       "chunks": [
         0
       ],
@@ -87,6 +87,17 @@
       ],
       "info": {
         "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "assets/images/aboutMe.bb3da57a.jpg",
+      "size": 103056,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "immutable": true,
+        "sourceFilename": "src/assets/images/aboutMe.jpg"
       },
       "emitted": false
     },
@@ -130,11 +141,11 @@
       "assets": [
         "runtime.2fe0f525.js",
         "runtime.2fe0f525.js.map",
-        "2.c313720d.js",
-        "2.c313720d.js.map",
-        "0.48fe4a47.css",
-        "app.85aeb49c.js",
-        "app.85aeb49c.js.map"
+        "2.85f1175a.js",
+        "2.85f1175a.js.map",
+        "0.29147b0b.css",
+        "app.f8e4e8a8.js",
+        "app.f8e4e8a8.js.map"
       ],
       "children": {},
       "childAssets": {}
@@ -145,9 +156,9 @@
     {
       "id": 0,
       "files": [
-        "0.48fe4a47.css",
-        "app.85aeb49c.js",
-        "app.85aeb49c.js.map"
+        "0.29147b0b.css",
+        "app.f8e4e8a8.js",
+        "app.f8e4e8a8.js.map"
       ]
     },
     {
@@ -160,8 +171,8 @@
     {
       "id": 2,
       "files": [
-        "2.c313720d.js",
-        "2.c313720d.js.map"
+        "2.85f1175a.js",
+        "2.85f1175a.js.map"
       ]
     }
   ]
