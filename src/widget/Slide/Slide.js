@@ -1,11 +1,11 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
+import Slide from '@mui/material/Slide';
 
 export default React.forwardRef((props, ref) => (
-  <Grid
+  <Slide
     ref={ref}
     {...props}
   >
     {props.children}
-  </Grid>
+  </Slide>
 ));

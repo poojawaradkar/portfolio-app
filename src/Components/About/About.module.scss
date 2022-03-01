@@ -1,4 +1,5 @@
 .root {
+	overflow: hidden;
 	padding: 40px 30px;
 	background-color: #f4f6f8;
 }
@@ -19,4 +20,37 @@
 	padding: 20px;
 	border-radius: 10px;
 	height: 100%;
+}
+.hexBox {
+	display: block;
+	margin: 30px 0;
+	position: relative;
+	width: 320px;
+	height: 277.12px;
+	box-sizing: border-box;
+	-webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+	clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.aboutMeImg {
+	width: 100%;
+}
+.aboutMeSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+.aboutInfo {
+	flex-basis: 50%;
+	padding: 30px;
+}
+.subHeading {
+	font-size: 22px;
+	font-weight: 700;
+
+	margin-bottom: 30px;
+	color: #212b36;
+}
+.para {
+	line-height: 1.5;
 }
