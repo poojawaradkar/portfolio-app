@@ -1,10 +1,10 @@
 import React from 'react';
-import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 
 export default props => (
-  <Button
+  <Grid
     {...props}
   >
     {props.children}
-  </Button>
+  </Grid>
 );

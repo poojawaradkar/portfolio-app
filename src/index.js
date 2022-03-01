@@ -1,33 +1,20 @@
 import React from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter } from 'react-router-dom';
 import { hydrate } from 'react-dom';
 import { loadableReady } from '@loadable/component';
+import { ThemeProvider } from '@mui/material/styles';
+
+import { theme } from 'Components/Shared/Theme';
 
 import App from './App';
 
-
-// import ErrorFallback from './components/Shared/ErrorFallback/ErrorFallback';
-
-
-
-
-
-console.log(pooja)
-
-
 const render = Component => {
   hydrate(
-    // <ErrorBoundary FallbackComponent={ErrorFallback}>
-
-
-    <BrowserRouter>
-
-      <Component />
-
-
-    </BrowserRouter>,
-    // </ErrorBoundary>,
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Component />
+      </BrowserRouter>
+    </ThemeProvider>,
     document.getElementById('root'),
   );
 };

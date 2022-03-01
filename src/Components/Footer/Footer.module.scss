@@ -1,0 +1,54 @@
+.root {
+	background-color: #f4f6f8;
+}
+.linkHolder {
+	background: #161c24;
+	padding: 70px 0 50px 0;
+	position: relative;
+	text-align: center;
+}
+.footerSvgStyle {
+	transform: translateY(6px);
+}
+.linkStyle {
+	background: #262f38;
+	cursor: pointer;
+	font-size: 18pt;
+	width: 40px;
+	height: 40px;
+	margin: 0 15px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	&:hover .icon {
+		-webkit-animation: toBottomFromTop 0.3s forwards;
+		-moz-animation: toBottomFromTop 0.3s forwards;
+		animation: toBottomFromTop 0.3s forwards;
+	}
+}
+
+.footnote {
+	color: #8f9aa7;
+	font-size: 10pt;
+	margin-top: 35px;
+	opacity: 0.6;
+}
+
+.highlight {
+	color: #00ab55;
+	font-weight: 600;
+}
+
+@keyframes toBottomFromTop {
+	49% {
+		transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}

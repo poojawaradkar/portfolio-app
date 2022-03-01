@@ -1,16 +1,70 @@
-import React from "react";
+import React from 'react';
+import Typography from '@mui/material/Typography';
 
-import SubHeader from "../Shared/SubHeader/SubHeader";
+import { HeaderSvg } from 'Components/Shared/Icons';
 
-const Introduction = () => {
-  return (
-    <div className="cover-image" style={{ backgroundImage: "url(images/4.jpg)" }}>
-      <div className="sub-title">
-        <em>Hey, I'm</em>
+import styles from './Introduction.module.scss';
+
+const Introduction = () => (
+  <>
+    <header>
+      <div className={styles.wrapper}>
+        <span className={styles.greeting}>Hello there!</span>
+        <span className={styles.name}>I'm Pooja</span>
+        <span className={styles.tagline}>I make cool websites.</span>
+        <span className={styles.action}>LET ME  SHOW  YOU!</span>
       </div>
-      <SubHeader headerText="POOJA WARADKAR" variant="light" as="h1" />
-    </div>
-  );
-};
+
+      <a href="#quotes" className={styles.projectsLink}>
+        <Typography classes={{
+          root: styles.linkStyle
+        }}
+        >
+          Random Quotes
+        </Typography>
+      </a>
+      <a
+        href="https://github.com/poojawaradkar"
+        target="_blank"
+        className={styles.githubLink}
+        rel="noreferrer"
+      >
+        <Typography classes={{
+          root: styles.linkStyle
+        }}
+        >
+          Github
+
+        </Typography>
+      </a>
+      <a href="#about" className={styles.aboutLink}>
+        <Typography classes={{
+          root: styles.linkStyle
+        }}
+        >
+          About
+        </Typography>
+      </a>
+      <a href="#contact" className={styles.contactLink}>
+        <Typography classes={{
+          root: styles.linkStyle
+        }}
+        >
+          Contact
+        </Typography>
+      </a>
+      <a href="#resume" className={styles.resumeLink}>
+        <Typography classes={{
+          root: styles.linkStyle
+        }}
+        >
+          Résumé
+        </Typography>
+      </a>
+    </header>
+
+    <HeaderSvg className={styles.svgStyle} />
+  </>
+);
 
 export default Introduction;

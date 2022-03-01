@@ -75,3 +75,9 @@ h2 {
 		transform: scaleX(1);
 	}
 }
+html,
+body {
+	scroll-behavior: smooth;
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+}

@@ -3,7 +3,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const LoadableWebpackPlugin = require('@loadable/webpack-plugin');
 
-
 const filename = path.resolve(__dirname, 'build');
 
 const IS_PROD_BUILD = process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging';
