@@ -87,7 +87,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             esModule: false,
-            publicPath: '/assets/images/',
+            publicPath: '/portfolio-app/assets/images/',
             outputPath: 'assets/images/',
             name: '[name].[hash:8].[ext]',
             emitFile: true,
