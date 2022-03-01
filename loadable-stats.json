@@ -1,0 +1,168 @@
+{
+  "errors": [],
+  "warnings": [],
+  "hash": "79cd7dd9ac4cb7723ed0",
+  "publicPath": "/",
+  "outputPath": "/home/pooja/Project/work/portfolio-app/build",
+  "assetsByChunkName": {
+    "app": [
+      "0.48fe4a47.css",
+      "app.85aeb49c.js",
+      "app.85aeb49c.js.map"
+    ],
+    "runtime": [
+      "runtime.e6be4c1d.js",
+      "runtime.e6be4c1d.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "0.48fe4a47.css",
+      "size": 13143,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "app"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "2.c313720d.js",
+      "size": 264568,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "2.c313720d.js.LICENSE.txt",
+      "size": 1451,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "2.c313720d.js.map",
+      "size": 968582,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "app.85aeb49c.js",
+      "size": 15768,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "app"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "app.85aeb49c.js.map",
+      "size": 31304,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "app"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "runtime.e6be4c1d.js",
+      "size": 1566,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "runtime"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "runtime.e6be4c1d.js.map",
+      "size": 8287,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "runtime"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "namedChunkGroups": {
+    "app": {
+      "chunks": [
+        1,
+        2,
+        0
+      ],
+      "assets": [
+        "runtime.e6be4c1d.js",
+        "runtime.e6be4c1d.js.map",
+        "2.c313720d.js",
+        "2.c313720d.js.map",
+        "0.48fe4a47.css",
+        "app.85aeb49c.js",
+        "app.85aeb49c.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": 0,
+      "files": [
+        "0.48fe4a47.css",
+        "app.85aeb49c.js",
+        "app.85aeb49c.js.map"
+      ]
+    },
+    {
+      "id": 1,
+      "files": [
+        "runtime.e6be4c1d.js",
+        "runtime.e6be4c1d.js.map"
+      ]
+    },
+    {
+      "id": 2,
+      "files": [
+        "2.c313720d.js",
+        "2.c313720d.js.map"
+      ]
+    }
+  ]
+}
