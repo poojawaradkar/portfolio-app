@@ -53,7 +53,12 @@ const Introduction = () => (
           Contact
         </Typography>
       </a>
-      <a href="/PoojaWaradkarResume.pdf" className={styles.resumeLink}>
+      <a
+        href="/portfolio-app/PoojaWaradkarResume.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className={styles.resumeLink}
+      >
         <Typography classes={{
           root: styles.linkStyle
         }}
