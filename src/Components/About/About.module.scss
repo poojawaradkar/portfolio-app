@@ -39,6 +39,9 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 50px;
+	@media (max-width: 920px) {
+		text-align: center;
+	}
 }
 .aboutInfo {
 	flex-basis: 50%;

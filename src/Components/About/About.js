@@ -95,19 +95,36 @@ const About = () => {
         </Slide>
       </Grid>
 
-      <div className={styles.aboutMeSection}>
-        <div className={styles.hexBox}>
-          <img
-            alt="about-me"
-            src={require('assets/images/aboutMe.jpg')}
-            className={styles.aboutMeImg}
-          />
-        </div>
-        <div className={styles.aboutInfo}>
-          <div className={styles.subHeading}>Passionate web developer based in India</div>
-          <div className={styles.para}>I enjoy designing and programming web applications that exceed expectations. I've developed a strong passion for software development industry over the years and love what I do. I am always looking to improve my skill set and provide value to an organisation.</div>
-        </div>
-      </div>
+      <Grid
+        container
+        spacing={2}
+        ref={ref}
+        className={styles.aboutMeSection}
+      >
+        <Grid
+          item
+          xs={12}
+          md={6}
+        >
+          <div className={styles.hexBox}>
+            <img
+              alt="about-me"
+              src={require('assets/images/aboutMe.jpg')}
+              className={styles.aboutMeImg}
+            />
+          </div>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={6}
+        >
+          <div className={styles.aboutInfo}>
+            <div className={styles.subHeading}>Passionate web developer based in India</div>
+            <div className={styles.para}>I enjoy designing and programming web applications that exceed expectations. I've developed a strong passion for software development industry over the years and love what I do. I am always looking to improve my skill set and provide value to an organisation.</div>
+          </div>
+        </Grid>
+      </Grid>
     </section>
   );
 };
