@@ -23,7 +23,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
   output: {
     filename: '[name].[contenthash:8].js',
-    publicPath: '/',
+    publicPath: '/portfolio-app',
     path: path.resolve(__dirname, 'build'),
   },
   plugins: [
